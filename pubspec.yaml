@@ -1,5 +1,5 @@
 name: base_app
-description: "A new Flutter project."
+description: "A base project to use as a reference for new applications."
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
