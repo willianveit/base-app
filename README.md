@@ -15,19 +15,23 @@ This project follows **Clean Architecture** combined with **Atomic Design** for 
 
 ## DIRECTORY STRUCTURE
 
+## 📂 DIRECTORY STRUCTURE
+
+```text
 lib/
-├─ app/ # App setup, routes, DI, theme
-├─ core/ # Shared infrastructure (errors, network, usecases, utils)
-├─ shared/ # Global UI + state
-│ └─ presentation/
-│ ├─ bloc/ # Global state (AppCubit)
-│ └─ atomic/ # Atomic Design (atoms, molecules, organisms, templates, pages)
-├─ features/ # Independent features
-│ ├─ auth/ # Authentication feature
-│ │ ├─ domain/ # Entities, repositories, usecases
-│ │ ├─ data/ # Models, datasources, repository impl
-│ │ └─ presentation/ # Bloc + Atomic UI
-│ └─ counter/ # Counter feature (same structure)
+├── app/                     App setup, routes, DI, theme
+├── core/                    Shared infrastructure (errors, network, usecases, utils)
+├── shared/                  Global UI + state
+│   └── presentation/
+│       ├── bloc/            Global state (AppCubit)
+│       └── atomic/          Atomic Design (atoms, molecules, organisms, templates, pages)
+├── features/                Independent features
+│   ├── auth/                Authentication feature
+│   │   ├── domain/          Entities, repositories, usecases
+│   │   ├── data/            Models, datasources, repository impl
+│   │   └── presentation/    Bloc + Atomic UI
+│   └── counter/             Counter feature (same structure as auth)
+```
 
 ---
 
