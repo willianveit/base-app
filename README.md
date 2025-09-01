@@ -74,6 +74,31 @@ AppCubit (shared/presentation/bloc/app_cubit.dart) handles:
 
 ---
 
+## FLAVORS & LAUNCH CONFIGURATIONS
+
+This project is configured with multiple flavors for different environments:
+
+### Available Flavors
+
+- **Development** (`main_dev.dart`) - For development environment
+- **Homologation** (`main_hmg.dart`) - For staging/testing environment
+- **Production** (`main_prod.dart`) - For production environment
+
+### Running the App
+
+You can launch the app in different flavors using VS Code:
+
+1. Open the **Run and Debug** panel (Ctrl/Cmd + Shift + D)
+2. Select from the dropdown:
+   - `base-app (dev)` - Development flavor
+   - `base-app (hmg)` - Homologation flavor
+   - `base-app (prod)` - Production flavor
+3. Click the play button or press F5
+
+Each flavor uses its corresponding entry point file in `lib/app/`.
+
+---
+
 ## BENEFITS
 
 - Clear separation of concerns
@@ -81,3 +106,4 @@ AppCubit (shared/presentation/bloc/app_cubit.dart) handles:
 - Reusable UI components
 - Scalable feature-based structure
 - Centralized global state
+- Multi-environment support with flavors
