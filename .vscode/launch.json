@@ -5,19 +5,31 @@
             "name": "base-app (dev)",
             "request": "launch",
             "type": "dart",
-            "program": "lib/app/main_dev.dart"
+            "program": "lib/app/main_dev.dart",
+            "args": [
+                "--flavor",
+                "dev"
+            ]
         },
         {
             "name": "base-app (hmg)",
             "request": "launch",
             "type": "dart",
-            "program": "lib/app/main_hmg.dart"
+            "program": "lib/app/main_hmg.dart",
+            "args": [
+                "--flavor",
+                "hmg"
+            ]
         },
         {
             "name": "base-app (prod)",
             "request": "launch",
             "type": "dart",
-            "program": "lib/app/main_prod.dart"
-        }
+            "program": "lib/app/main_prod.dart",
+            "args": [
+                "--flavor",
+                "prod"
+            ]
+        },
     ]
 }

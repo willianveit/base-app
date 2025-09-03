@@ -1,0 +1,13 @@
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug-prod.xcconfig"
+#include "Generated.xcconfig"
+
+// Production configuration for Debug-prod
+PRODUCT_BUNDLE_IDENTIFIER = com.example.baseapp
+PRODUCT_NAME = BaseApp
+DISPLAY_NAME = Base App
+
+// Firebase configuration file
+FIREBASE_CONFIG = GoogleService-Info-prod
+
+// Force bundle identifier
+INFOPLIST_FILE = Runner/Info.plist

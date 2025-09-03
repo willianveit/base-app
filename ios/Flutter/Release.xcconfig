@@ -1,1 +1,8 @@
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"
 #include "Generated.xcconfig"
+
+// Configuração padrão para Release
+DISPLAY_NAME = Base App
+
+// Configuração dinâmica baseada no flavor
+// O Flutter irá incluir o arquivo correto baseado no --flavor usado
