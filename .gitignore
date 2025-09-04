@@ -117,13 +117,5 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
-android/app/google-services.json
-android/app/src/dev/google-services.json
-.gitignore
-android/app/src/prod/google-services.json
-.gitignore
-ios/Runner/GoogleService-Info-hmg.plist
-.gitignore
-ios/Runner/GoogleService-Info-prod.plist
-ios/Runner/GoogleService-Info-dev.plist
-android/app/src/hmg/google-services.json
+*google-services.json
+ios/Runner/GoogleService-Info*
