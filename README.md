@@ -72,6 +72,17 @@ AppCubit (shared/presentation/bloc/app_cubit.dart) handles:
 
 ---
 
+## BENEFITS
+
+- Clear separation of concerns
+- Easy testing at each layer
+- Reusable UI components
+- Scalable feature-based structure
+- Centralized global state
+- Multi-environment support with flavors
+
+---
+
 ## 🚀 FLAVORS & LAUNCH CONFIGURATIONS
 
 This project is configured with multiple flavors for different environments, each with its own configuration files, Firebase settings, and bundle identifiers.
@@ -197,12 +208,3 @@ You need to create **separate Firebase projects** for each environment:
 > **Security Note**: These configuration files contain sensitive API keys and should never be committed to version control. Each team member should obtain their own configuration files from the appropriate Firebase projects to ensure proper separation of data and analytics between environments.
 
 ---
-
-## BENEFITS
-
-- Clear separation of concerns
-- Easy testing at each layer
-- Reusable UI components
-- Scalable feature-based structure
-- Centralized global state
-- Multi-environment support with flavors
