@@ -167,19 +167,27 @@ You need to create **separate Firebase projects** for each environment:
 
 #### Android Configuration:
 
-- **Development**: `android/app/src/dev/google-services.json`
+**Caminhos dos arquivos `google-services.json`:**
 
+- **Development**: `android/app/src/dev/google-services.json`
   - Package name: `com.example.baseapp.dev`
   - Project ID: `base-app-dev-1756753470`
 
 - **Homologation**: `android/app/src/hmg/google-services.json`
-
   - Package name: `com.example.baseapp.hmg`
   - Project ID: `base-app-hmg-1756753495`
 
 - **Production**: `android/app/src/prod/google-services.json`
   - Package name: `com.example.baseapp`
   - Project ID: (configure with your production Firebase project)
+
+**Como adicionar os arquivos:**
+
+1. Baixe o arquivo `google-services.json` do Firebase Console para cada ambiente
+2. Coloque cada arquivo no diretório correspondente:
+   - Para **dev**: `android/app/src/dev/google-services.json`
+   - Para **hmg**: `android/app/src/hmg/google-services.json`
+   - Para **prod**: `android/app/src/prod/google-services.json`
 
 #### iOS Configuration:
 
