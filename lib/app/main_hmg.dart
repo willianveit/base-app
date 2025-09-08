@@ -2,7 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import '../firebase_options_hmg.dart';
-import 'widgets/environment_home_page.dart';
+import 'routes/app_router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,16 +19,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'BaseApp-hmg',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
+        useMaterial3: true,
       ),
-      home: const EnvironmentHomePage(
-        title: 'BaseApp-hmg - Counter',
-        environment: 'hmg',
-        primaryColor: Colors.orange,
-      ),
+      routerConfig: AppRouter.router,
     );
   }
 }
